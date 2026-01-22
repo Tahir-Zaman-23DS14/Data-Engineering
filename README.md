@@ -3,7 +3,6 @@
 Welcome to my **Data Engineering** repository.
 This space is focused on **real learning through real projects** — not just theory.
 
-If you are a **recruiter, student, or data enthusiast**, this repo is designed to be easy to explore and enjoyable to understand.
 
 ---
 
