@@ -40,7 +40,7 @@ More projects will be added step by step as I grow in this field.
 I use the following platform for building and testing projects:
 
 * **Databricks**
-  🔗 [https://dbc-83ec4549-ba31.cloud.databricks.com/?o=7474655407646011](https://dbc-83ec4549-ba31.cloud.databricks.com/?o=7474655407646011)
+
 
 ---
 
