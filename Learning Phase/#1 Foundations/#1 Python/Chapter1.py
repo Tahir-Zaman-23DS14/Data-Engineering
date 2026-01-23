@@ -90,7 +90,83 @@ print("Line1\nLine2")
 """
                                             #######################################################################################
 # 2. Data Types
+""" 
+## What is a Data Type?
+A data type defines what kind of data a variable can store and what operations can be performed on it.
+It tells Python how to handle the data in memory.
 
+Think of it like different containers:
+ 1.A number container for calculations
+ 2.A text container for words
+ 3.A true/false container for decisions
+
+## Main Data Types
+
+1. Integer (int)
+
+    Definition:
+    Whole numbers without decimals (positive, negative, or zero)
+    Use: For counting, calculations with whole numbers
+
+        age = 25          # Positive integer
+        temperature = -5  # Negative integer  
+        count = 0         # Zero
+ 
+ 
+ 2. Float (float)
+
+    Definition:
+    Numbers with decimal points
+    Use: For measurements, precise calculations
+
+        price = 19.99     # Decimal number
+        pi = 3.14159      # Mathematical constant
+        height = 1.75     # Measurement
+
+
+3. String (str)
+
+    Definition:
+    Text data (sequence of characters)
+    Use: For names, messages, any text
+
+        name = "Alice"      # Text in double quotes
+        city = 'New York'   # Text in single quotes
+        message = "Hello!"  # Any text content
+
+4. Boolean (bool)
+    
+    Definition:
+    Represents True or False values
+    Use: For conditions, switches, yes/no decisions
+
+       is_student = True    # Yes/true condition
+        is_raining = False   # No/false condition
+        is_empty = False     # Another false value
+
+        
+###Quick Comparison###
+
+# Examples side by side
+age = 25             # int - whole number
+price = 29.99        # float - decimal number  
+name = "John"        # str - text
+is_active = True     # bool - true/false
+
+# Check types
+print(type(age))       # <class 'int'>
+print(type(price))     # <class 'float'>
+print(type(name))      # <class 'str'>
+print(type(is_active)) # <class 'bool'>
+
+Simple Rules
+    int → Whole numbers: 10, -5, 0
+    float → Decimal numbers: 3.14, -2.5, 0.0
+    str → Text in quotes: "hello", 'Python'
+    bool → Only True or False (case-sensitive)
+
+That's it! These 4 are the most essential data types you'll use every day in Python.
+""" 
 
                                             #######################################################################################
 
@@ -146,37 +222,95 @@ Example 3: Multiple Assignment
 
 
 Example 4: Variable Naming Rules
-
 # Valid variable names
-first_name = "John"
-_last_name = "Doe"
-age2 = 30       # Numbers allowed but not at start
-PI_VALUE = 3.14 # Constants often in uppercase
+        first_name = "John"
+        _last_name = "Doe"
+        age2 = 30       # Numbers allowed but not at start
+        PI_VALUE = 3.14 # Constants often in uppercase
+
+Example 5: Variable Operations
+
+# Arithmetic operations
+        num1 = 15
+        num2 = 4
+
+        sum_result = num1 + num2
+        difference = num1 - num2
+        product = num1 * num2
+        quotient = num1 / num2      # Float division
+        floor_div = num1 // num2    # Integer division
+        remainder = num1 % num2     # Modulus
+
+        print(f"Sum: {sum_result}")        # Output: Sum: 19
+        print(f"Quotient: {quotient}")     # Output: Quotient: 3.75
+        print(f"Remainder: {remainder}")   # Output: Remainder: 3
+
+# String operations
+        greeting = "Hello"
+        name = "Alice"
+        message = greeting + " " + name + "!"
+        print(message)  # Output: Hello Alice!
+
+-----------------------------------------------------------------------
+        
 
 # Invalid names (will cause errors)
 # 2name = "test"     # Cannot start with number
 # first-name = "test" # Hyphen not allowed
 # class = "Math"     # Cannot use reserved keywords
-Example 5: Variable Operations
-python
-# Arithmetic operations
-num1 = 15
-num2 = 4
+"""
+                                            #######################################################################################
 
-sum_result = num1 + num2
-difference = num1 - num2
-product = num1 * num2
-quotient = num1 / num2      # Float division
-floor_div = num1 // num2    # Integer division
-remainder = num1 % num2     # Modulus
+# 4. Input Function
+"""
+Getting Input from Users
+1. Use the input() function to get text input from the user.
 
-print(f"Sum: {sum_result}")        # Output: Sum: 19
-print(f"Quotient: {quotient}")     # Output: Quotient: 3.75
-print(f"Remainder: {remainder}")   # Output: Remainder: 3
+    # Basic Syntax
+      variable_name = input("Prompt message: ")
 
-# String operations
-greeting = "Hello"
-name = "Alice"
-message = greeting + " " + name + "!"
-print(message)  # Output: Hello Alice!
+      Examples
+        1. Simple Text Input
+
+    # Get user's name
+       name = input("Enter your name: ")
+       print(f"Hello, {name}!")
+
+       
+2. Number Input (Convert from string)
+
+    # Input returns string, convert to int for numbers
+        age = input("Enter your age: ")
+        age = int(age)  # Convert string to integer
+        print(f"You are {age} years old.")
+
+    # Shorter way:
+        age = int(input("Enter your age: "))
+
+
+3. Float Input
+
+     # For decimal numbers
+         price = float(input("Enter price: $"))
+         print(f"The price is ${price:.2f}")
+
+     
+     
+4. Multiple Inputs
+
+    # Get multiple values
+        name = input("What's your name? ")
+        age = int(input("How old are you? "))
+        city = input("Where do you live? ")
+        print(f"{name} is {age} years old and lives in {city}.")
+
+5. Input with Different Data Types
+
+    # Get various types of data
+        product = input("Product name: ")  # str
+        quantity = int(input("Quantity: "))  # int
+        price = float(input("Price per item: "))  # float
+        in_stock = input("In stock? (yes/no): ").lower() == "yes"  # bool
+
+        print(f"{quantity} x {product} = ${quantity * price}")
 """
